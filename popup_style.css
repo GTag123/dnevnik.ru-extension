@@ -1,0 +1,13 @@
+.href {
+    margin: 30px;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 20px;
+    padding: 0 2px;
+    text-align: center;
+}
+body {
+    background-image: url("images/popbg.jpg");
+    background-repeat:no-repeat;
+    background-size: contain;
+}

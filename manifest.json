@@ -1,0 +1,36 @@
+{
+    "manifest_version": 2,
+    "name": "Dnevnik.ru subject rating",
+    "description": "Средняя оценка для всех предметов дневник ру. Так как наш школьный сисадмин дебил",
+    "version": "1.0",
+    "author": "Tagir",
+    "homepage_url": "https://garifullin.ga",
+    "icons": {
+        "16": "images/icon16.png",
+        "32": "images/icon32.png",
+        "48": "images/icon48.png",
+        "128": "images/icon128.png"
+    },
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "*://schools.dnevnik.ru/marks.aspx"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "*://schools.dnevnik.ru/*"
+            ],
+            "css": [
+                "content_css.css"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "web_accessible_resources": [
+        "images/alien.gif"
+    ]
+}
